@@ -1,0 +1,325 @@
+
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="styles.css">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <nav id="navbar">
+            <header>Python Documentation</header>
+            <ul>
+              <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+              <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+              <li><a class="nav-link" href="#Variables">Variables</a></li>
+              <li><a class="nav-link" href="#If_elif_else">If elif else</a></li>
+              <li><a class="nav-link" href="#While_statement">While statement</a></li>
+              <li><a class="nav-link" href="#For">For</a></li>
+              <li><a class="nav-link" href="#Clases">Clases</a></li>
+              <li><a class="nav-link" href="#Reference">Reference</a></li>
+            </ul>
+          </nav>
+          <main id="main-doc">
+            <section class="main-section" id="Introduction">
+              <header>Introduction</header>
+              <article>
+                <p>
+                    Python is a high-level, interpreted, general-purpose programming language. 
+                    Its design philosophy emphasizes code readability with the use of significant indentation.
+                    is dynamically-typed and garbage-collected. It supports multiple programming paradigms,
+                    including structured (particularly procedural), object-oriented and functional programming. 
+                    It is often described as a "batteries included" language due to its comprehensive standard library.
+                </p>
+          
+                <p>
+                    Python is an easy to learn, powerful programming language. 
+                    It has efficient high-level data structures and a simple but effective approach to object-oriented 
+                    programming. Python's elegant syntax and dynamic typing, together with its interpreted nature,
+                    make it an ideal language for scripting and rapid application development in many areas on most platforms.
+                </p>
+                
+              </article>
+            </section>
+            <section class="main-section" id="Hello_world">
+              <header>Hello world</header>
+              <article>
+                Python is a very simple language, and has a very straightforward syntax. 
+                It encourages programmers to program without boilerplate (prepared) code. 
+                The simplest directive in Python is the "print" directive - it simply prints out a line.
+                <code>
+                    <pre class="result notranslate">
+                   Print ("Hello world")
+                    </pre>
+                </code>
+              </article>
+            </section>
+            <section class="main-section" id="Variables">
+              <header>Variables</header>
+              <article>
+                <p>
+                    Python is completely object oriented, and not "statically typed". 
+                    You do not need to declare variables before using them, or declare their type. 
+                    Every variable in Python is an object.
+                </p>
+                <p>
+                    Python supports two types of numbers - integers(whole numbers) and floating point numbers(decimals).
+                    To define an integer, use the following syntax:
+                <code>
+                    
+                     number= 25
+                     print (number)
+                    
+                </code>
+                    To define a floating point number, you may use one of the following notations:
+                <code>
+                    
+                     myfloat = 7.0
+                    print(myfloat)
+                    
+                    </code>
+                </p>
+                <p>
+                    Strings are defined either with a single quote or a double quotes.
+                    The difference between the two is that using double quotes makes it easy to include apostrophes 
+                    (whereas these would terminate the string if using single quotes)
+                <code>
+                    
+                     mystring = 'hello'
+                     print(mystring)
+                     mystring = "hello"
+                     print(mystring)
+                    
+                </code>
+                </p>
+              </article>
+              
+            </section>
+        
+            <section class="main-section" id="If_elif_else">
+              <header>If elif else</header>
+              <article>
+                It is similar to that of other languages. 
+                The if statement contains a logical expression using which data is compared and a decision 
+                is made based on the result of the comparison.
+          
+                <code>
+                    <pre class="result notranslate">
+                    if expression:
+                        statement(s)
+                    </pre>
+                </code>
+                If the boolean expression evaluates to TRUE, then the block of statement(s)
+                inside the if statement is executed. 
+                If boolean expression evaluates to FALSE, then the first set of code after the end of the 
+                if statement(s) is executed.
+                <p>
+                An else statement can be combined with an if statement.
+                An else statement contains the block of code that executes 
+                if the conditional expression in the if statement resolves to 0 or a FALSE value.
+                </p>
+                <p>
+                    The else statement is an optional statement and there could be at most
+                     only one else statement following if.
+                </p>
+                <code>
+                    <pre class="result notranslate">
+                    if expression:
+                        statement(s)
+                    else:
+                       statement(s)
+                    </pre>
+                </code>
+                The elif statement allows you to check multiple
+                 expressions for TRUE and execute a block of code as soon as one of the conditions evaluates to TRUE.
+                 <p>
+                    Similar to the else, the elif statement is optional.
+                    However, unlike else, for which there can be at most one statement,
+                    there can be an arbitrary number of elif statements following an if.
+                 </p>
+          
+                <code>
+                    <pre class="result notranslate">
+                    if expression1:
+                       statement(s)
+                    elif expression2:
+                        statement(s)
+                    elif expression3:
+                       statement(s)
+                    else:
+                      statement(s)
+                    </pre>
+                </code>
+    
+                There may be a situation when you want to check for another condition 
+                after a condition resolves to true. In such a situation, you can use the nested if construct.
+                In a nested if construct, you can have an if...elif...else construct inside another if...elif...else construct.
+          
+                <code>
+                    <pre class="result notranslate">
+                if expression1:
+                        statement(s)
+                    elif expression2:
+                       statement(s)
+                    elif expression3:
+                      statement(s)
+                    elif expression4:
+                        statement(s)
+                    else:
+                        statement(s)
+                 else:
+                    statement(s)
+                    </pre>
+                </code>
+              </article>
+            </section>
+            <section class="main-section" id="While_statement">
+              <header>While statement</header>
+              <article>
+                The while loop in Python is used to iterate over a block of code as long as the test expression 
+                (condition) is true. We generally use this loop when we don't know the number of times to iterate 
+                beforehand.
+                Python has two primitive loop commands:
+                <ul>
+                    <li>
+                        <b>while</b> loops
+                    </li>
+                    <li>
+                        <b>for</b> loops
+                    </li>
+                </ul>
+                With the while loop we can execute a set of statements as long as a condition is true.
+                <code>
+                    <pre class="result notranslate">
+                    i = 1
+                    while i < 6:
+                      print(i)
+                      i += 1
+                    </pre>
+                </code>
+                If the condition becomes false,
+                statement within the loop stops executing and control passes to the
+                statement following the loop.
+          
+                <p>
+                    The while loop requires relevant variables to be ready, 
+                    in this example we need to define an indexing variable, i, which we set to 1.
+                </p>
+          
+                <p>
+                    With the break statement we can stop the loop even if the while condition is true:
+                </p>
+          
+                Example:
+          
+                <code>
+                    <pre class="result notranslate">
+                    i = 1
+                    while i < 6:
+                      print(i)
+                      if i == 3:
+                        break
+                      i += 1
+                    </pre>
+                </code>
+                <p>
+                    Same as with for loops, while loops can also have an optional else block.
+                    The else part is executed if the condition in the while loop evaluates to False.
+                    The while loop can be terminated with a break statement. In such cases, the else part is ignored. 
+                    Hence, a while loop's else part runs if no break occurs and the condition is false.
+                </p>
+    
+              </article>
+            </section>
+            <section class="main-section" id="For">
+              <header>For</header>
+              <article>
+                A for loop is used for iterating over a sequence 
+                (that is either a list, a tuple, a dictionary, a set, or a string).
+                This is less like the for keyword in other programming languages,
+                and works more like an iterator method as found in other object-orientated programming languages.
+                <p>
+                    With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+                </p>
+                <code>
+                    <pre class="result notranslate">
+                    fruits = ["apple", "banana", "cherry"]
+                    for x in fruits:
+                        print(x)
+                    </pre>
+                </code>
+                
+              </article>
+            </section>
+            <section  class="main-section" id="Clases">
+                <header>Clases</header>
+                <article>
+                    The class statement creates a new class definition.
+                    The name of the class immediately follows the keyword class followed by a colon as follows −
+                    <code>
+                        <pre class="result notranslate">
+                        class ClassName:
+                            'Optional class documentation string'
+                            class_suite  
+                        </pre>
+                    </code>
+                    <ul>
+                        <li>
+                            The class has a documentation string, which can be accessed via ClassName.__doc__.
+                        </li>
+                        <li>
+                            The class_suite consists of all the component statements defining class members,
+                             data attributes and functions.
+                        </li>
+                    </ul>
+                    <code>
+                        <pre class="result notranslate">
+                        class Employee:
+                        'Common base class for all employees'
+                        empCount = 0
+    
+                        def __init__(self, name, salary):
+                            self.name = name
+                            self.salary = salary
+                            Employee.empCount += 1
+       
+                        def displayCount(self):
+                            print "Total Employee %d" % Employee.empCount
+    
+                        def displayEmployee(self):
+                            print "Name : ", self.name,  ", Salary: ", self.salary
+                        </pre>
+                    </code>
+                    <ul>
+                        <li>
+                            The variable empCount is a class variable whose value is shared among all instances of a
+                             this class. This can be accessed as Employee.empCount from inside the class or outside the
+                              class.
+                        </li>
+                        <li>
+                            The first method __init__() is a special method, which is called class constructor or 
+                            initialization method that Python calls when you create a new instance of this class.
+                        </li>
+                        <li>
+                            You declare other class methods like normal functions with the exception that the first argument to each method is self.
+                            Python adds the self argument to the list for you; you do not need to include it when you call the methods.
+                        </li>
+                    </ul>
+                </article>
+    
+            </section>
+            <section class="main-section" id="Reference">
+              <header>Reference</header>
+              <article>
+                All the documentation in this page is taken from <a href="https://www.python.org/" target="_blank">here</a>
+              </article>
+            </section>
+          </main>
+          
+      </body>
+    </html>
